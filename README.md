@@ -1,0 +1,5 @@
+Week 4 – Cryptography Lab (Pataraia25 Multi-Script Python Version)
+
+This repository completes the Week 4 lab using separate Python scripts per task. Task 1 demonstrates file protection using both asymmetric and symmetric encryption. In task1_rsa.py, a 2048-bit RSA key pair is generated and used to encrypt message.txt with the public key and decrypt it with the private key, producing outputs in the outputs/ directory. In task1_aes.py, AES-256 in CBC mode is used to encrypt and decrypt the same message file using a randomly generated key and IV, also saved under outputs/. The file rsa_vs_aes.txt summarizes why RSA is typically used for authentication/key establishment while AES is used for bulk data encryption.
+
+Task 2 examines TLS/HTTPS security using task2_tls.py. The script connects to a user-provided HTTPS host, records the negotiated TLS version and cipher suite, extracts certificate metadata (issuer, subject, validity), and saves the server certificate as outputs/server_cert.pem. The explanation of the TLS handshake and how TLS mitigates man-in-the-middle attacks is documented in tls_report.txt.
